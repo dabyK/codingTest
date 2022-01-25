@@ -37,19 +37,34 @@ public class No2439 {
 		
 		//풀이3
 		//기본 스트링과 스캐너보다는 스트림과 스트링빌더를 쓰는 게 속도면에서 적합하다.
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-	    int cnt = Integer.parseInt(br.readLine());
-	    StringBuilder sb = new StringBuilder();
-
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//	    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//	    int cnt = Integer.parseInt(br.readLine());
+//	    StringBuilder sb = new StringBuilder();
+//
+//	    for(int i=1; i<= cnt; i++){
+//	      for(int j= 1; j <= cnt; j++){
+//	        bw.write(j<=(cnt-i)?" ":"*");
+//	      }
+//	      bw.write("\n");
+//	    }
+//	    bw.flush();
+//	    bw.close();
+	    
+	    //풀이4
+	    //속도 더 개선
+	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringBuilder sb = new StringBuilder();
+	    final int cnt = Integer.parseInt(br.readLine());
+	    
 	    for(int i=1; i<= cnt; i++){
 	      for(int j= 1; j <= cnt; j++){
-	        bw.write(j<=(cnt-i)?" ":"*");
+	        sb.append(j<=(cnt-i)?" ":"*");
 	      }
-	      bw.write("\n");
+	      sb.append("\n");
 	    }
-	    bw.flush();
-	    bw.close();
+	    System.out.print(sb);
+	    br.close();
 
 	}
 
