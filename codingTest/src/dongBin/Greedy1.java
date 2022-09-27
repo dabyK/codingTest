@@ -3,7 +3,7 @@ package dongBin;
 import java.io.*;
 import java.util.*;
 
-public class Page92 {
+public class Greedy1 {
 	public static void main(String[] args) throws Exception{
 		//3장 그리디
 		//큰 수의 법칙
