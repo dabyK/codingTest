@@ -13,6 +13,8 @@ public class FirstSearch1 {
 		//N*M크기의 얼음틀 에 구멍이 뚫린 부분은 0, 칸막이가 존재하는 부분은 1
 		//구멍뚫린 것끼리는 서로 연결되어 하나의 얼음을 생성
 		//총 몇개의 얼음이 만들어 지는지
+		
+		//책에서 인접행렬을 사용했기 때문에 인접 리스트로 한번 도전!
 		int result = 0;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
